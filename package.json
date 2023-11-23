@@ -1,6 +1,6 @@
 {
-  "name": "coins-league",
-  "version": "0.0.2",
+  "name": "stock-league",
+  "version": "0.0.1",
   "main": "index.ts",
   "repository": "https://github.com/DexKit/coins-league.git",
   "engines": {

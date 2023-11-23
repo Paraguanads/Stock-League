@@ -161,8 +161,8 @@ contract BattleNFTFactory is Ownable {
             "Game can not start yet"
         );
         require(game.started == false, "game already started");
-        require(game.aborted == false, "Game  aborted");
-        require(game.player2 != address(0), "game not full");
+        require(game.aborted == false, "Game aborted");
+        require(game.player2 != address(0), "Game not full");
         game.start_timestamp = block.timestamp;
         coin_player1[id].start_price = getPriceFeed(coin_player1[id].coin_feed);
         coin_player2[id].start_price = getPriceFeed(coin_player2[id].coin_feed);
@@ -173,9 +173,9 @@ contract BattleNFTFactory is Ownable {
     function endGame(uint256 id) external {
         require(id < allGames.length);
         Game storage game = allGames[id];
-        require(game.started == true, "game not started");
-        require(game.aborted == false, "Game   aborted");
-        require(game.finished == false, "game not finished");
+        require(game.started == true, "Game not started");
+        require(game.aborted == false, "Game aborted");
+        require(game.finished == false, "Game not finished");
         require(
             block.timestamp > game.start_timestamp + game.duration,
             "duration still not elapsed"
@@ -244,9 +244,9 @@ contract BattleNFTFactory is Ownable {
     function abortGameAndWithdraw(uint256 id) external {
         require(id < allGames.length);
         Game storage game = allGames[id];
-        require(game.started == false, "Game  already started");
-        require(game.aborted == false, "Game  already aborted");
-        require(game.player2 == address(0), "Game  is already full");
+        require(game.started == false, "Game already started");
+        require(game.aborted == false, "Game already aborted");
+        require(game.player2 == address(0), "Game is already full");
         game.aborted = true;
         emit Aborted(id, block.timestamp);
         game.withdrawed = true;
