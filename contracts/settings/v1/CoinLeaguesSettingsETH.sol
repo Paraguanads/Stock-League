@@ -19,25 +19,25 @@ contract CoinLeagueSettingsETH is ICoinLeagueSettings {
 
     constructor() {
         //1inch / USD
-        _chainlink_feeds[0xc929ad75B72593967DE83E7F7Cda0493458261D9] = true;
+        // _chainlink_feeds[0xc929ad75B72593967DE83E7F7Cda0493458261D9] = true;
         // aave / USD
-        _chainlink_feeds[0x547a514d5e3769680Ce22B2361c10Ea13619e8a9] = true;
+        // _chainlink_feeds[0x547a514d5e3769680Ce22B2361c10Ea13619e8a9] = true;
         // ada / USD
-        _chainlink_feeds[0xAE48c91dF1fE419994FFDa27da09D5aC69c30f55] = true;
+        // _chainlink_feeds[0xAE48c91dF1fE419994FFDa27da09D5aC69c30f55] = true;
         // BNB / USD
-        _chainlink_feeds[0x14e613AC84a31f709eadbdF89C6CC390fDc9540A] = true;
+        // _chainlink_feeds[0x14e613AC84a31f709eadbdF89C6CC390fDc9540A] = true;
         // BNT / USD
-        _chainlink_feeds[0x1E6cF0D433de4FE882A437ABC654F58E1e78548c] = true;
+        // _chainlink_feeds[0x1E6cF0D433de4FE882A437ABC654F58E1e78548c] = true;
         // BTC / USD
-        _chainlink_feeds[0xF4030086522a5bEEa4988F8cA5B36dbC97BeE88c] = true;
+        // _chainlink_feeds[0xF4030086522a5bEEa4988F8cA5B36dbC97BeE88c] = true;
         // CRO/USD
-        _chainlink_feeds[0x00Cb80Cf097D9aA9A3779ad8EE7cF98437eaE050] = true;
+        // _chainlink_feeds[0x00Cb80Cf097D9aA9A3779ad8EE7cF98437eaE050] = true;
         // AVAX/USD
-        _chainlink_feeds[0xFF3EEb22B5E3dE6e705b44749C2559d704923FD7] = true;
+        // _chainlink_feeds[0xFF3EEb22B5E3dE6e705b44749C2559d704923FD7] = true;
         // AVAX/USD
-        _chainlink_feeds[0xFF3EEb22B5E3dE6e705b44749C2559d704923FD7] = true;
+        // _chainlink_feeds[0xFF3EEb22B5E3dE6e705b44749C2559d704923FD7] = true;
         // Band/USD
-        _chainlink_feeds[0x919C77ACc7373D000b329c1276C76586ed2Dd19F] = true;
+        // _chainlink_feeds[0x919C77ACc7373D000b329c1276C76586ed2Dd19F] = true;
 
         // Allowed Amounts
         _allowed_amounts[0.01 ether] = true;
